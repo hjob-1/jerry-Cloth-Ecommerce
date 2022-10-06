@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto", sans-serif;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  background: #f9f9f9;
+}
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+a {
+  color: black;
+}

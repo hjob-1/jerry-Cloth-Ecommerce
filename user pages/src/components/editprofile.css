@@ -1,0 +1,95 @@
+.edit-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-actions {
+  border: 2px solid rgb(240, 236, 236);
+  padding: 30px;
+}
+
+.edit-inputwrapper {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.edit-inputwrapper input {
+  padding: 10px;
+  flex: 1;
+  margin-left: 5px;
+  border: 1px solid rgb(240, 236, 236);
+  background: #f8f8f8;
+}
+.edit-inputwrapper input:focus {
+  outline: 1px solid rgb(235, 171, 52);
+  transition: all linear;
+}
+.edit-inputwrapper label {
+  flex-basis: 25%;
+}
+.edit-inputwrapper select {
+  margin-left: 8px;
+  background: #f8f8f8;
+  padding: 7px;
+  border: 1px solid rgb(240, 236, 236);
+}
+.edit-inputwrapper option {
+  background: #f8f8f8;
+}
+.edit-inputwrapper select option :hover {
+  background: rgb(235, 171, 52);
+  color: white;
+}
+.update {
+  display: flex;
+  margin-top: 20px;
+}
+.updatebtn {
+  flex: 1;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  padding: 8px 10px;
+  font-size: 17px;
+  border: 1px solid rgb(235, 171, 52);
+  color: rgb(235, 171, 52);
+}
+
+.updatebtn:hover {
+  background-color: rgb(235, 171, 52);
+  color: rgb(238, 235, 235);
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+@media screen and (max-width: 540px) {
+  .form-actions {
+    margin-top: 15px;
+    border: none;
+    padding: 0px;
+  }
+  .edit-inputwrapper input {
+    padding: 7px;
+    flex: 1;
+    margin-left: 4px;
+    border: 1px solid rgb(240, 236, 236);
+    background: #f8f8f8;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .form-actions {
+    margin: 0 auto;
+    margin-top: 15px;
+    border: none;
+    padding: 0px;
+    width: 90%;
+  }
+  .edit-inputwrapper input {
+    padding: 7px;
+    flex: 0;
+    margin-left: 4px;
+    border: 1px solid rgb(240, 236, 236);
+    background: #f8f8f8;
+  }
+}
