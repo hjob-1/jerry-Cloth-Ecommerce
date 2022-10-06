@@ -1,0 +1,47 @@
+.modalConatiner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(248, 246, 246);
+}
+.modalConatiner img {
+  height: 350px;
+  width: 300px;
+  object-fit: cover;
+}
+.modalWrapper {
+  width: 600px;
+  height: 400px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+.modalWrapperItem {
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.modalInfoWrapper {
+  justify-self: self-start;
+  flex: 1;
+  padding: 10px;
+  margin-top: 50px;
+}
+.modalInfoWrapper p {
+  margin-bottom: 15px;
+}
+.btnClose {
+  text-align: right;
+  padding-right: 20px;
+  font-weight: bold;
+  font-size: 25px;
+  color: red;
+  cursor: pointer;
+}

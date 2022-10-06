@@ -1,0 +1,125 @@
+.loginregister-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  color: rgb(97, 96, 96);
+}
+.loginregister-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pop-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pop-detail-wrapper {
+  padding: 25px;
+  padding-top: 0px;
+  border-radius: 7px;
+  background: white;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+.Rbtns-wrapper > button {
+  padding: 10px;
+  font-size: 30px;
+  font-weight: 500;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.Rbtns-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Rbtns-wrapper .login {
+  margin-right: 30px;
+}
+.Rbtns-wrapper .active {
+  transition: all linear;
+}
+.inputwrapper {
+  margin-top: 10px;
+}
+
+.inputwrapper input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(240, 236, 236);
+  background: #f8f8f8;
+}
+.inputwrapper input:focus {
+  outline: 1px solid rgb(235, 171, 52);
+  transition: all linear;
+}
+.login {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+}
+.loginbtn {
+  width: 100%;
+  padding: 5px 0px;
+  font-size: 15px;
+  background: rgb(235, 171, 52);
+  color: black;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  text-align: center;
+  border: none;
+  margin-top: 10px;
+}
+.loginbtn:hover {
+  background-color: rgb(235, 171, 52);
+  color: rgb(238, 235, 235);
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 550px) {
+  .Rbtns-wrapper > button {
+    padding: 0px;
+    font-size: 18px;
+  }
+  .inputwrapper input {
+    padding: 5px;
+  }
+
+  .login {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+  }
+  .loginbtn {
+    width: 100%;
+    padding: 5px 0px;
+    font-size: 15px;
+    background: rgb(235, 171, 52);
+    color: black;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: none;
+    margin-top: 10px;
+  }
+  .inputwrapper {
+    margin-top: 0px;
+  }
+  .inputheader {
+    margin-bottom: 5px;
+  }
+}

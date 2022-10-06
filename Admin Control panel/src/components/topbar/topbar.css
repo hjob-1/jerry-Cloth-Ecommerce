@@ -1,0 +1,107 @@
+.topbar {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  border-bottom: 1px solid rgb(231, 226, 226);
+}
+
+.topbarWrapper {
+  height: 100%;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 30px;
+  color: darkblue;
+  cursor: pointer;
+}
+.topCenter {
+  color: darkblue;
+  width: 100px;
+  height: 98%;
+  flex-basis: 20%;
+}
+.topCenter img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.topCenterBtn {
+  cursor: pointer;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.topCenterBtn:hover .productChoice,
+.topCenterBtn:hover .userChoice {
+  display: block;
+  transition: 0.3s ease;
+  cursor: pointer;
+  background-color: rgb(235, 227, 227);
+}
+
+.productChoice,
+.userChoice {
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  width: 150px;
+  display: none;
+  z-index: 44;
+  list-style-type: none;
+  padding: 0;
+  font-size: 14px;
+}
+.productChoice li,
+.userChoice li {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+.userChoice {
+  left: 118px;
+  width: 125px;
+}
+
+a {
+  text-decoration: none;
+  padding: 5px;
+  color: black;
+}
+a:hover {
+  color: white;
+}
+.productChoice li:hover,
+.userChoice li:hover {
+  background-color: green;
+}
+.productChoice:hover {
+  display: block;
+  transition: 0.4s linear;
+}
+.userChoice {
+  position: absolute;
+  display: none;
+}
+.topRight {
+  display: flex;
+  align-items: center;
+}
+
+.topAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
