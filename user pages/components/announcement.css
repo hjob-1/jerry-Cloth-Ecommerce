@@ -1,0 +1,16 @@
+.Ann-container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  height: 30px;
+  z-index: 100000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+  background-color: #05a081;
+  padding-top: 7px;
+}

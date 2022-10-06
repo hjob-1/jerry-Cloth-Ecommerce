@@ -1,0 +1,63 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+.btns-container {
+  width: 95%;
+  margin: 50px auto 35px auto;
+}
+.btnsheading {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.btns-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.btns-container ul li {
+  margin-left: 15px;
+}
+.active {
+  border-bottom: 2px solid orange;
+  border-radius: none;
+}
+.btns-container button {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  outline: none;
+}
+.btns-container button:hover {
+  transition: all 0.2s linear;
+  color: orange;
+}
+.btns-container button:active {
+  color: rgb(179, 117, 3);
+}
+
+@media screen and (max-width: 768px) {
+  .btnsheading {
+    font-size: 17px;
+  }
+  .btns-container ul li {
+    margin-left: 15px;
+  }
+  .btns-container button {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .btns-container ul li {
+    margin-left: 7px;
+  }
+}
